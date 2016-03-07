@@ -1,0 +1,440 @@
+/*
+
+orange = #f27a29
+blue = #027fc2
+
+*/
+div.container {
+  page-break-after:always;
+}
+
+body { margin: 0; font-size: 10pt; padding: 0; font-family: Helvetica, sans-serif }
+
+.left-right {
+    overflow:hidden;
+    height:100%;
+    width:100%;
+    position:relative;
+    border-radius: 5px;
+
+
+}
+.slider {
+	color: black;
+    padding: 5px;
+    font-size: 1.0em;
+    line-height: 110%;
+    font-weight: bold;
+    width:100%;
+    height:100%;
+    position:absolute;
+    vertical-align: middle;
+    text-align: center;
+    top:-150%;
+    opacity: 0%;
+    background: rgba(255,255,255,.83);
+}
+
+.testimonialHeader .testimonialHeaderText {
+	font-size: 1.2em;
+	font-weight: bold;
+	display: inline-block; height: 100%; width: 74%;
+}
+
+.myCarux  .testimonialContainer .testimonialText {
+  font-size: 1.07em;
+  z-index: 10;
+  top:  1.5%;
+  position: absolute;
+  padding: 1.7%;
+  height: 100%;
+  overflow: auto;
+}
+
+.price {
+	width: 90px;
+	margin-right: 15px;
+	border-radius: 7px;
+	text-align: right;
+	margin-right: 3px;
+}
+
+/* ABOUT US SLIDER, Ben put here as needed query string, and should have that site wide, so moved up top */
+@media (max-width: 990px) {
+
+   .slider {   	
+    padding: 1px;
+    font-size: .79em;
+    font-weight: bold;
+    line-height: 100%;
+   }
+
+
+.testimonialHeader .testimonialHeaderText {
+	font-size: 1em;
+}
+
+.myCarux  .testimonialContainer .testimonialText {
+  font-size: .93em;
+}
+}
+@media (max-width: 701px) {
+
+   .slider {   	
+    padding: 0px;
+    font-size: .70em;
+    font-weight: normal;
+    line-height: 103%;
+   }
+
+   .testimonialHeader .testimonialHeaderText {
+		font-size: .9em;
+	}
+
+	.myCarux  .testimonialContainer .testimonialText {
+  		font-size: .9em;
+	}
+}
+@media (max-width: 601px) {
+
+   .slider {   	
+    padding: 0px;
+    font-size: .55em;
+    font-weight: normal;
+    line-height: 101%;
+
+   }
+}
+
+
+@media (max-width: 501px) {
+   .slider {   	
+    padding: 0px;
+    font-size: .45em;
+    font-weight: normal;
+    line-height: 100%;
+   }
+}
+
+
+.image a:hover {
+  border: solid orange thin;
+  background: yellowgreen;
+  opacity: .3;
+}
+
+div.myCaru { margin: 0px; }
+div.myCaru div { height: 100px; display: cell; vertical-align: middle;}
+div.myCaru div:hover { border: dotted red 1px;}
+div#stores div img, div.myCaru div img { vertical-align: middle;  margin: auto; position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90%; }
+
+#allstores {
+   width: 100%;
+}
+
+#stores div img {
+   width: 103px;
+   vertical-align: middle;
+
+   border: 1px gray;
+}
+#stores div {
+  float: left;
+  vertical-align: middle;
+   border: dotted navy 1px;
+   border-radius: 3px;
+   height: 120px;
+   margin: 2px;
+   display: inline-block;
+}
+
+div h1 {
+  font-size: 21px;
+}
+
+div h3 {
+  margin-top: 15px;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+	#stores div img {
+	  max-height: 100%;
+	  width: auto;
+	}
+
+	#stores div {
+	  height: 24%;
+	  width: 18.3999%;
+	  overflow: hidden;
+	}
+
+	div h1 {
+      font-size: 18px;
+    }
+
+	div h3 {
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  font-size: 16px;
+	}
+
+	div {
+		font-size: 12.5px;
+		line-height: 1.35;
+	}
+
+}
+
+@media (max-width: 640px) {
+
+	div h1 {
+      font-size: 14px;
+    }
+
+	div h3 {
+	  margin-top: 7px;
+	  margin-bottom: 8px;
+	  font-size: 12px;
+	}
+
+	div {
+		font-size: 11px;
+		line-height: 1.25;
+	}
+}
+
+
+
+h1 { margin: 0; font-size: 20pt; font-weight: bold; color: #027fc2 }
+h2 { margin: 3pt 0; color: #027fc2 }
+#main > h1:first-child { margin-top: 0; margin-bottom: 10px; }
+h1 + h2 { margin-top: 0 }
+
+/*a { text-decoration: none; color: inherit }*/
+a[href]:hover, a[target] { text-decoration: underline }
+a[href^="mailto"] { font-family: monospace; font-size: larger }
+
+table { margin: 0 auto; margin-bottom: 5px; }
+td, th { padding: 5pt }
+th { text-align: left }
+td.price, th.price, td.label { text-align: right !important; padding: 5px !important; }
+td.image, td.quantity, th.quantity { text-align: center }
+
+#nav-bar { position: fixed; top: 0; right: 5%; margin-top: 2pt; padding: 2pt; text-align: right; background-color:rgba(255,255,255,0.7); font-size: smaller; color: #027fc2; width: 205px; }
+#nav-bar > span:before { content: " \00B7  " }
+#nav-bar > span:first-child:before { content: none }
+
+#footer { margin: 18pt; text-align: center; font-size: smaller; color: gray }
+#footer > span:before { content: " \00B7  " }
+#footer > span:first-child:before { content: none }
+
+#header, #merchantlinks { /*position: relative; left: -4%; width: 108%;*/ margin: 0 auto; text-align: center }
+#header { height: 161px }	/* to allow logo tag to hang below */
+
+#main { margin: 0 auto; width: 100% }
+
+hr { margin: 24pt 0px; }
+
+#merchantlinks img { vertical-align: middle; margin: 1pt 6pt; opacity: 0.5 }
+#merchantlinks img:hover { opacity: 1 }
+
+button, input[type='submit'], .button {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	padding: 6pt 12pt;
+	font-size: medium;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-font-smoothing: antialiased;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	text-decoration: none
+}
+a.button:hover { text-decoration: none }
+
+button.large, input[type='submit'].large, .button.large { padding: 5pt 12pt; font-size: 12pt }
+button.small, input[type='submit'].small, .button.small { padding: 3pt 9pt; font-size: smaller; font-weight: normal }
+
+button:active, input[type='submit']:active, .button:active {
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	border: solid 1px #203E5F;
+}
+
+.blue {
+	background-color: #027fc2;
+	border: solid 1px #0a79be;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(#39bbec, #0a79be);
+	background-image: -webkit-linear-gradient(top, #39bbec, #0a79be);
+	background-image: -moz-linear-gradient(top, #39bbec, #0a79be);
+	color: white;
+}
+.blue:hover, .blue:active {
+	background-image: linear-gradient(#027fc2, #0a79be);
+	background-image: -webkit-linear-gradient(top, #027fc2, #0a79be);
+	background-image: -moz-linear-gradient(top, #027fc2, #0a79be);
+}
+.orange {	/* fbbd74, f27a29, f35b2c */
+	background-color: #f27a29;
+	border: solid 1px #f35b2c;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(#fbbd74, #f35b2c);
+	background-image: -webkit-linear-gradient(top, #fbbd74, #f35b2c);
+	background-image: -moz-linear-gradient(top, #fbbd74, #f35b2c);
+	color: white;
+}
+.orange:hover, .orange:active {
+	background-image: linear-gradient(#f27a29, #f35b2c);
+	background-image: -webkit-linear-gradient(top, #f27a29, #f35b2c);
+	background-image: -moz-linear-gradient(top, #f27a29, #f35b2c);
+}
+
+#notice {
+	padding: 24pt;
+	text-align: center;
+	font-size: larger;
+	color: #0a79be
+}
+
+
+/* Home Page */
+
+/* my Carousel on "beta".php/homepage*/
+div.myCaru { border-top: 6px #F8A433 solid; border-bottom: 3px #F8A433 solid; }
+
+#video {
+	width: 4px; height: 2px;
+	margin-left: auto; margin-right: auto;
+	background-image: url("/images/tag_background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center
+}
+#video > button { margin-top: 2px }
+
+#video > p, #download + p { color: dimgray }
+div#crossriderInstallButton { margin-top: 1em; text-align: center }
+div#crossriderInstallButton a:hover{ text-decoration: none; }
+/* Cart */
+
+h1.cart { margin-bottom: -12pt; color: #027fc2 }
+
+#cart { margin-top : 15px; }
+
+#cart > thead { text-align: center; font-size: smaller; font-weight: bold; color: gray }
+
+#cart .headerRow {
+  border-bottom: solid gray 1px;
+  vertical-align: bottom;
+  padding-bottom: 1px;
+}
+
+#cart th.merchant {
+   padding-top: 17px;
+}
+#cart > tfoot > tr:first-child{
+	border-top: double medium gray;
+	padding-top: 15pt
+}
+
+
+#cart > tbody { color: gray }
+
+#cart .name2, #cart .other { font-size: smaller }
+
+#cart img { max-width: 96px; max-height: 96px }
+
+#cart td.name { text-align: left; } 
+
+#cart td.quantity > div { position: relative }
+#cart td.quantity input[type="text"] { width: 24pt; text-align: center }
+#cart td.quantity span.delete { display: block; position: absolute; visibility: hidden; left: 0; width: 100%; font-size: smaller }
+#cart td.quantity:hover span.delete { visibility: visible; cursor: pointer }
+#cart td.quantity span.delete:hover { text-decoration: underline }
+
+#cart tbody, #cart tr { -webkit-transition: opacity .5s ease }
+
+#cart { border-spacing: 0 2px }
+
+/* Download Page */
+
+table#download td { width: 33.333%; text-align: center }
+
+/* Checkout */
+
+div.error-message { color: red }
+
+form#checkout { width: 600px; margin-left: auto; margin-right: auto }
+
+/* is [for] type syntax (css3?) recognized by all browsers inc mobile? 
+ * goes beyond scope of my proj but should chk*/
+form#checkout label[for] { display: inline-block ; width: 120px; text-align: right; margin-right: 6pt }
+
+
+/* here too, what happens in ie7 or 8, does type='text' work?
+ * I added plain'ol' input n' select*/
+form#checkout input[type='text'],
+ form#checkout input[type='email'],
+ form#checkout input[type='tel'],
+ form#checkout input[type='password'],
+ form#checkout input,
+ form#checkout select
+ { width: 140pt }
+form#checkout input#other-neighbor { width: 56pt }
+
+form#checkout input[type='radio'] { width: 27px; text-align: right; }
+form#checkout label > img { vertical-align: middle }
+form#checkout div#cc_info { padding: 6pt 0 }
+form#checkout div#cc_info input#cc_id { width: 56pt }
+
+form#checkout div#total { padding: 6pt; text-align: center; font-size: larger }
+table.chkout {
+   width: 350px;
+}
+/* Orders */
+
+
+table#orders a { font-size: smaller; color: #027fc2; text-decoration: underline }
+
+
+/* Order */
+
+table.order { min-width: 80%; border-spacing: 0 }
+table.order > tbody > tr:first-child > th { border-top: thin solid gray; padding-top: 12pt }
+table.order > tfoot > tr:first-child > td { border-top: medium double gray; padding-top: 12pt }
+
+table#order-status td { text-align: center; font-size: smaller }
+td.not-yet { opacity: 0.5 }
+
+
+/* Misc*/
+
+div.button-wrapper { text-align: center }
+
+#social { position: fixed; top: 0; left: 5%; margin-top: 2pt; padding: 2pt; width: 210px; font-size: smaller; }
+#social img { opacity: 0.5; }
+#social img:hover { opacity: 1; }
+
+tfoot td.lbl{ width: 200px; font-size: 10pt; float: right; text-align: right; font-weight: bold;}
+select#quantity{ width:50px;}
+
+#cart > tfoot > tr.totals { border-top: dashed thin lightgray; /*border-bottom: double medium gray; */ }
+/*#cart > tfoot > tr:nth-child(6) { border-top: double medium gray; }*/
+
+label {display: inline; }
+h2{font-size: 24px; margin-bottom: 10px;}
+h3 {font-size: 20px;}
+td span{display: block;}
+td span.del:hover{text-decoration: underline;}
+.dropdown-menu {display: inline;position: relative;min-width: 0px}
+.alert{width: 80%;margin: 0px auto;}
+input.btn, a.btn{padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px;}
